@@ -129,29 +129,26 @@ public class Main {
      *
      * int left_bound(int[] nums, int target) {
      *     int left = 0, right = nums.length - 1;
-     *     // 搜索区间为 [left, right]
      *     while (left <= right) {
      *         int mid = left + (right - left) / 2;
      *         if (nums[mid] < target) {
-     *             // 搜索区间变为 [mid+1, right]
      *             left = mid + 1;
      *         } else if (nums[mid] > target) {
-     *             // 搜索区间变为 [left, mid-1]
      *             right = mid - 1;
      *         } else if (nums[mid] == target) {
-     *             // 收缩右侧边界
+     *             // 别返回，收紧右边界，锁定左侧边界
      *             right = mid - 1;
      *         }
      *     }
      *
-     *     // 检查出界情况
+     *     // 最后要检查 left 越界的情况
      *     if (left >= nums.length || nums[left] != target)
      *         return -1;
-     *      return left;
+     *     return left;
      * }
      *
-     * 这样就和第⼀种⼆分搜索算法统⼀了，都是两端都闭的「搜索区间」，⽽且最后返回的也是 left 变量的值。只要把住
-     * ⼆分搜索的逻辑，两种形式⼤家看⾃⼰喜欢哪种记哪种吧。
+     * 这样就和第⼀种⼆分搜索算法（即 寻找一个数）统⼀了，都是两端都闭的「搜索区间」，⽽且最后返回的也是 left
+     * 变量的值。只要把住⼆分搜索的逻辑，两种形式⼤家看⾃⼰喜欢哪种记哪种吧。
      */
     public static void main(String[] args) {
 
