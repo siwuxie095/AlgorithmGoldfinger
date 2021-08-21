@@ -77,19 +77,22 @@ public class Main {
      *
      * int right_bound(int[] nums, int target) {
      *     int left = 0, right = nums.length - 1;
+     *     // 搜索区间为 [left, right]
      *     while (left <= right) {
      *         int mid = left + (right - left) / 2;
      *         if (nums[mid] < target) {
+     *             // 搜索区间变为 [mid+1, right]
      *             left = mid + 1;
      *         } else if (nums[mid] > target) {
+     *             // 搜索区间变为 [left, mid-1]
      *             right = mid - 1;
      *         } else if (nums[mid] == target) {
-     *             // 别返回，收紧左边界，锁定右侧边界
+     *             // 收缩左侧边界
      *             left = mid + 1;
      *         }
      *     }
      *
-     *     // 最后要检查 right 越界的情况
+     *     // 检查出界情况
      *     if (right < 0 || nums[right] != target)
      *         return -1;
      *     return right;
