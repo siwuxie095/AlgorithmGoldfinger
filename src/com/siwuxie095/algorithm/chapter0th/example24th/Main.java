@@ -7,9 +7,9 @@ package com.siwuxie095.algorithm.chapter0th.example24th;
 public class Main {
 
     /**
-     * 五、逻辑统⼀
+     * 五、总结
      *
-     * 来梳理⼀下所有细节差异的因果逻辑。
+     * 下面来梳理⼀下所有细节差异的因果逻辑，并进行统一。
      *
      * 第⼀个，最基本的⼆分查找算法：
      *
