@@ -7,7 +7,7 @@ package com.siwuxie095.algorithm.chapter0th.example19th;
 public class Main {
 
     /**
-     * ⼆分查找详解
+     * 二分搜索解题套路框架
      *
      * 先给⼤家讲个笑话乐呵⼀下：
      *

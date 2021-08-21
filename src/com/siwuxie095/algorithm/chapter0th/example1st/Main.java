@@ -7,7 +7,7 @@ package com.siwuxie095.algorithm.chapter0th.example1st;
 public class Main {
 
     /**
-     * 学习算法和刷题的思路指南
+     * 学习算法和刷题的框架思维
      *
      * 这⾥讲的都是普通的数据结构，用来解决常规的问题。通过 110 多道 LeetCode 算法问题，
      * 对数据结构和算法建⽴⼀个框架性的认识。

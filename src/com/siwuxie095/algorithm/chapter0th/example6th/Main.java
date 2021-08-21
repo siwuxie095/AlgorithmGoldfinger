@@ -7,7 +7,7 @@ package com.siwuxie095.algorithm.chapter0th.example6th;
 public class Main {
 
     /**
-     * 动态规划详解
+     * 动态规划解题套路框架
      *
      * 动态规划问题的⼀般形式就是求最值。动态规划其实是运筹学的⼀种最优化⽅法，只不过在计算机问题上
      * 应⽤⽐较多，⽐如说让你求最⻓递增⼦序列、最⼩编辑距离等等。

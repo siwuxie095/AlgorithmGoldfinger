@@ -7,8 +7,7 @@ package com.siwuxie095.algorithm.chapter0th.example10th;
 public class Main {
 
     /**
-     * 回溯算法详解
-     *
+     * 回溯算法解题套路框架
      *
      * 解决⼀个回溯问题，实际上就是⼀个决策树的遍历过程。你只需要思考 3 个问题：
      * 1、路径：也就是已经做出的选择。
